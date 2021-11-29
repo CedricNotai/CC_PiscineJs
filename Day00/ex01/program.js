@@ -7,5 +7,7 @@ function isPalindrome(string) {
     }
 }
 
+console.log(isPalindrome("kayak"));
+
 // Merci de ne pas effacer la ligne en dessous.
 exports.isPalindrome =  isPalindrome;
