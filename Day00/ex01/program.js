@@ -7,7 +7,7 @@ function isPalindrome(string) {
     }
 }
 
-console.log(isPalindrome(string));
+// console.log(isPalindrome(string));
 
 // Merci de ne pas effacer la ligne en dessous.
 exports.isPalindrome =  isPalindrome;
