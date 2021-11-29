@@ -13,8 +13,6 @@ function twoNumberSum(array, targetSum){
     }
     return result;
 }
-
-twoNumberSum(array, targetSum);
     
 // Merci de ne pas effacer la ligne en dessous.
 exports.twoNumberSum =  twoNumberSum;
