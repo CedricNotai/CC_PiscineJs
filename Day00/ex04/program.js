@@ -1,28 +1,30 @@
 function levDist(str1, str2){
-    let diffCount1=0;
-    let diffCount2=0;
-    
-    for (let i=0;i <= str1.length; i++) {
-        let character = str1.charAt(i);
-        for (let j=0; j <= str2.length; j++) {
-            if (str2.indexOf(character) === -1) {
-                diffCount1++;
-                break;
-            }
+    if (!str1.length) {
+            return str2.length;
         }
-    }
 
-    for (let i=0;i <= str2.length; i++) {
-        let character = str2.charAt(i);
-        for (let j=0; j <= str1.length; j++) {
-            if (str1.indexOf(character) === -1) {
-                diffCount2++;
-                break;
+        if (!str2.length) {
+            return str1.length;
+        }
+
+    let result = [];
+
+    for (let i = 0; i <= str2.length; i++) {
+        result[i] = [i];
+        for (let j = 1; j <= str1.length; j++) {
+            if (i === 0) {
+                result[i][j] =j;
+            } else {
+                result[i][j] =Math.min(
+                    result[i - 1][j] + 1,
+                    result[i][j - 1] + 1,
+                    result[i - 1][j - 1] + (str1[j - 1] === str2[i - 1] ? 0 : 1)
+                );
             }
         }
     }
-    return Math.max(diffCount1, diffCount2);
+    return result[str2.length][str1.length];
 };
- 
+
 // Merci de ne pas effacer la ligne en dessous.
 exports.levDist =  levDist;
