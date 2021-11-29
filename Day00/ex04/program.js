@@ -22,6 +22,5 @@ function levDist(str1, str2){
     return diffCount;
   };
 
- 
 // Merci de ne pas effacer la ligne en dessous.
 exports.levDist =  levDist;
