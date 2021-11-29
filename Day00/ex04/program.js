@@ -22,8 +22,7 @@ function levDist(str1, str2){
         }
     }
     return Math.max(diffCount1, diffCount2);
-  };
-
+};
  
 // Merci de ne pas effacer la ligne en dessous.
 exports.levDist =  levDist;
