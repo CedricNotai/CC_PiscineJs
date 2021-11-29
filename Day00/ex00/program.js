@@ -12,5 +12,7 @@ function twoNumberSum(array, targetSum){
     return result;
 }
 
+console.log(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 15));
+
 // Merci de ne pas effacer la ligne en dessous.
-exports.twoNumberSum =  twoNumberSum;
+//exports.twoNumberSum =  twoNumberSum;
