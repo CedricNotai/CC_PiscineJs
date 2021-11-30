@@ -21,7 +21,7 @@ function sun(buildings, direction){
 
     return results.sort(function(a,b){
         return a - b;
-    });;
+    });
 }
 
 // Merci de ne pas effacer la ligne en dessous.
