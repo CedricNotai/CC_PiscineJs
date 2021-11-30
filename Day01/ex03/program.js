@@ -1,5 +1,3 @@
-let string = 'AAAAAAAAAAAAAB BCCCCDD';
-
 function runLengthEncoding(string) {
     let count=0;
     let result="";
@@ -19,8 +17,5 @@ function runLengthEncoding(string) {
     return result;
 }
 
-
-console.log(runLengthEncoding(string));
-
 // Merci de ne pas effacer la ligne en dessous.
-//exports.runLengthEncoding = runLengthEncoding;
+exports.runLengthEncoding = runLengthEncoding;
